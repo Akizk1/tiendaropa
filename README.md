@@ -56,3 +56,46 @@
     </footer>
 
     <script src="js/script.js"></script>
+    // Obtener secciones
+    const inicioSection = document.getElementById('inicio');
+    const productosSection = document.getElementById('productos');
+    // Aquí puedes obtener las secciones de Carrito y Feedback
+    // const carritoSection = document.getElementById('carrito');
+    // const feedbackSection = document.getElementById('feedback');
+
+    // Función para ocultar todas las secciones
+    function hideAllSections() {
+        inicioSection.style.display = 'none';
+        productosSection.style.display = 'none';
+        // Ocultar otras secciones
+        // carritoSection.style.display = 'none';
+        // feedbackSection.style.display = 'none';
+    }
+
+    // Función para mostrar una sección específica
+    function showSection(section) {
+        hideAllSections();
+        section.style.display = 'block';
+    }
+
+    // Agregar eventos a los enlaces de navegación
+    inicioLink.addEventListener('click', () => {
+        showSection(inicioSection);
+    });
+
+    productosLink.addEventListener('click', () => {
+        showSection(productosSection);
+    });
+
+    // Aquí puedes agregar eventos para Carrito y Feedback
+    // carritoLink.addEventListener('click', () => {
+    //     showSection(carritoSection);
+    // });
+
+    // feedbackLink.addEventListener('click', () => {
+    //     showSection(feedbackSection);
+    // });
+
+    // Mostrar la sección de inicio por defecto
+    showSection(inicioSection);
+});
