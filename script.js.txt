@@ -1,0 +1,3 @@
+// script.js
+
+// Aquí podemos agregar la funcionalidad de JavaScript más adelante
